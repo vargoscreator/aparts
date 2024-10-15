@@ -386,6 +386,24 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+}
+.popular__product-label{
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    border-radius: 5px;
+    background: var(--color-red);
+    width: 60px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 125%;
+
 }
 .popular__product-slide-image{
     width: 100%;
