@@ -32,7 +32,7 @@
                     </ul>
                 </nav>
                 <div class="header__top-end">
-                    <a class="header__top-garage" href="basket.html">
+                    <a class="header__top-garage" href="#">
                         <div class="header__garage--icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                 <path d="M4.33333 15H2.33333C1.86662 15 1.63327 15 1.45501 14.9046C1.29821 14.8207 1.17072 14.6869 1.09082 14.5223C1 14.3351 1 14.0901 1 13.6V5.40982C1 5.0805 1 4.91584 1.04933 4.77208C1.09292 4.64501 1.16394 4.53026 1.25683 4.43683C1.3619 4.33112 1.50521 4.26424 1.79182 4.13049L8.5 1L15.2082 4.13049C15.4948 4.26424 15.6381 4.33112 15.7432 4.43683C15.8361 4.53026 15.9071 4.64501 15.9507 4.77208C16 4.91584 16 5.0805 16 5.40982V13.6C16 14.0901 16 14.3351 15.9092 14.5223C15.8293 14.6869 15.7018 14.8207 15.545 14.9046C15.3668 15 15.1334 15 14.6667 15H12.6667M4.33333 15V6.25H12.6667V15M4.33333 15H12.6667" stroke="#191919" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -106,7 +106,7 @@
                               </svg>
                         </button>
 
-                        <a class="header__cart" href="#">
+                        <a class="header__cart" href="basket.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26" fill="none">
                                 <g clip-path="url(#clip0_5_2820)">
                                   <path d="M0.951994 1.9107C0.439382 1.9107 0 1.47535 0 0.943256C0 0.435349 0.439382 0 0.951994 0H3.44182C3.46623 0 3.51505 0 3.53946 0C4.41823 0.024186 5.19935 0.193488 5.85842 0.604651C6.59072 1.06419 7.12775 1.76558 7.42067 2.80558C7.42067 2.82977 7.42067 2.85395 7.44508 2.87814L7.68918 3.84558H29.048C29.585 3.84558 30 4.28093 30 4.78884C30 4.88558 29.9756 4.98233 29.9512 5.07907L27.4614 15.0195C27.3637 15.4549 26.9731 15.7451 26.5338 15.7451H10.9113C11.2531 17.0028 11.5948 17.68 12.0586 17.9944C12.62 18.3572 13.5964 18.3814 15.2319 18.3572H15.2563H26.2897C26.8267 18.3572 27.2417 18.7926 27.2417 19.3005C27.2417 19.8326 26.8023 20.2437 26.2897 20.2437H15.2563C13.2303 20.2679 11.9854 20.2195 10.9845 19.5665C9.95932 18.8893 9.42229 17.7284 8.88527 15.6242L5.61432 3.36186C5.61432 3.33767 5.61432 3.33767 5.58991 3.31349C5.44345 2.7814 5.19935 2.4186 4.85761 2.22512C4.51587 2.00744 4.05207 1.9107 3.51505 1.9107C3.49064 1.9107 3.46623 1.9107 3.44182 1.9107H0.951994ZM23.4337 21.3563C24.7274 21.3563 25.7771 22.3963 25.7771 23.6781C25.7771 24.96 24.7274 26 23.4337 26C22.14 26 21.0903 24.96 21.0903 23.6781C21.0903 22.3963 22.14 21.3563 23.4337 21.3563ZM13.157 21.3563C14.4508 21.3563 15.5004 22.3963 15.5004 23.6781C15.5004 24.96 14.4508 26 13.157 26C11.8633 26 10.8137 24.96 10.8137 23.6781C10.8137 22.3963 11.8633 21.3563 13.157 21.3563ZM8.2262 5.73209L10.3987 13.8344H25.8015L27.8275 5.73209H8.2262Z" fill="white"/>
@@ -210,8 +210,6 @@
                         <li>
                             <a href="#">Повернення і обмін</a>
                         </li>
-                    </ul>
-                    <ul>
                         <li>
                             <a href="#">Політика конфіденційності</a>
                         </li>
@@ -249,7 +247,9 @@
                                     <div class="basket__block-content">
                                         <div class="basket__item">
                                             <div class="basket__item-start">
-                                                <h3>GKN/LOBRO/SPIDAN</h3>
+                                                <a href="#">
+                                                    <h3>GKN/LOBRO/SPIDAN</h3>
+                                                </a>
                                                 <p>23690</p>
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>
@@ -261,7 +261,7 @@
                                             </div>
                                             <div class="basket__item-count">
                                                 <button class="count-minus"></button>
-                                                <span class="count-amount">1</span>
+                                                <input type="number" class="count-amount" value="1" min="1" max="999">
                                                 <button class="count-plus"></button>
                                                 <button class="count-reset"></button>
                                             </div>
@@ -272,7 +272,9 @@
                                         </div>
                                         <div class="basket__item">
                                             <div class="basket__item-start">
-                                                <h3>GKN/LOBRO/SPIDAN</h3>
+                                                <a href="#">
+                                                    <h3>GKN/LOBRO/SPIDAN</h3>
+                                                </a>
                                                 <p>23690</p>
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>
@@ -284,7 +286,7 @@
                                             </div>
                                             <div class="basket__item-count">
                                                 <button class="count-minus"></button>
-                                                <span class="count-amount">1</span>
+                                                <input type="number" class="count-amount" value="1" min="1" max="999">
                                                 <button class="count-plus"></button>
                                                 <button class="count-reset"></button>
                                             </div>
@@ -311,7 +313,9 @@
                                     <div class="basket__block-content">
                                         <div class="basket__item">
                                             <div class="basket__item-start">
-                                                <h3>GKN/LOBRO/SPIDAN</h3>
+                                                <a href="#">
+                                                    <h3>GKN/LOBRO/SPIDAN</h3>
+                                                </a>
                                                 <p>23690</p>
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>
@@ -323,7 +327,7 @@
                                             </div>
                                             <div class="basket__item-count">
                                                 <button class="count-minus"></button>
-                                                <span class="count-amount">1</span>
+                                                <input type="number" class="count-amount" value="1" min="1" max="999">
                                                 <button class="count-plus"></button>
                                                 <button class="count-reset"></button>
                                             </div>
@@ -334,7 +338,9 @@
                                         </div>
                                         <div class="basket__item">
                                             <div class="basket__item-start">
-                                                <h3>GKN/LOBRO/SPIDAN</h3>
+                                                <a href="#">
+                                                    <h3>GKN/LOBRO/SPIDAN</h3>
+                                                </a>
                                                 <p>23690</p>
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>
@@ -346,7 +352,7 @@
                                             </div>
                                             <div class="basket__item-count">
                                                 <button class="count-minus"></button>
-                                                <span class="count-amount">1</span>
+                                                <input type="number" class="count-amount" value="1" min="1" max="999">
                                                 <button class="count-plus"></button>
                                                 <button class="count-reset"></button>
                                             </div>

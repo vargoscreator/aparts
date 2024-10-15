@@ -149,17 +149,36 @@ h3{
         max-width: 480px;
     }
     main.main {
-        padding-top: 242.42px;
+        padding-top: 203.52px;
     }
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     background-color: #fff;
     z-index: 100;
 }
+
+
+.header.scroll .header__inner {
+    animation: 0.4s ease 0s 1 normal none running headerIn;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 16px 0 28px;
+}
+@keyframes headerIn {
+    0% {
+        transform: translate3d(0px, -100px, 0px);
+    }  
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+  }
+
 .header__top{
     padding: 12px 0;
     display: flex;
@@ -414,6 +433,7 @@ a.header__link:hover{
     opacity: 0;
     pointer-events: none;
     transition: all .1s ease;
+    box-shadow: 0px 1px 4px 0px rgba(12, 12, 13, 0.10), 0px 1px 4px 0px rgba(12, 12, 13, 0.05);
 }
 .header__link-open.active ~ .header__link-menu{
     opacity: 1;
@@ -468,6 +488,11 @@ a.header__link:hover{
     }
 }
 @media (max-width: 767px) {
+    .header.scroll .header__inner{
+        top: -78px;
+        animation: none;
+        padding: 20px 0;
+    }
     .header__top{
         flex-direction: column;
         gap: 20px;
@@ -475,6 +500,9 @@ a.header__link:hover{
     }
     .header__top-end{
         max-width: 224px;
+    }
+    .header__top-menu{
+        display: none;
     }
     .header__top-menu ul li a,
     .header__top-request,
@@ -599,7 +627,7 @@ a.header__link:hover{
     .header__menu-content{
         position: fixed;
         inset: 0;
-        top: 172px;
+        top: 133px;
         overflow: auto;
         background-color: var(--color-dark);
         padding: 16px 0 35px;
