@@ -449,6 +449,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 10px;
+    padding-top: 2px;
 }
 .analogues__form-filters::-webkit-scrollbar {
     width: 3px;
