@@ -75,7 +75,8 @@ button{
     -moz-osx-font-smoothing: inherit;
     -webkit-appearance: none;
 }
-input{
+input,
+textarea{
     outline: none;
     border: none;
     background-color: var(--color-white);
@@ -904,4 +905,61 @@ a.footer__about-item:hover{
     .footer__block ul li a{
         font-size: 18px;
     }
+}
+.filter__label{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+    cursor: pointer;
+    width: auto;
+    min-width: 130px;
+}
+.filter__checkbox {
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.filter__checkbox + .checkmark {
+    position: relative;
+    top: 1px;
+    left: 0;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+.filter__checkbox + .checkmark:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-white);
+}
+.filter__checkbox:checked + .checkmark{
+    color: var(--color-dark);
+}
+.filter__checkbox:checked + .checkmark:before {
+    background: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+.filter__checkbox:checked + .checkmark:after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3337 4L6.00033 11.3333L2.66699 8' stroke='white' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

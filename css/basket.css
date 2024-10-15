@@ -284,6 +284,9 @@
     align-items: center;
     justify-content: center;
 }
+.basket__total-make:active{
+    background-color: rgba(25, 25, 25, 0.5);
+}
 .basket__total-reset{
     display: flex;
     align-items: center;
