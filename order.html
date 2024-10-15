@@ -240,23 +240,23 @@
                                         <div class="order__block-inputs">
                                             <div class="order__input-item">
                                                 <label class="label-name" for="surname">*Прізвище</label>
-                                                <input type="text" name="surname" required>
+                                                <input type="text" name="surname" id="surname" required>
                                             </div>
                                             <div class="order__input-item">
                                                 <label class="label-name" for="name">*Ім’я</label>
-                                                <input type="text" name="name" required>
+                                                <input type="text" name="name" id="name" required>
                                             </div>
                                             <div class="order__input-item">
                                                 <label class="label-name" for="fatherly">По-батькові</label>
-                                                <input type="text" name="fatherly">
+                                                <input type="text" name="fatherly" id="fatherly">
                                             </div>
                                             <div class="order__input-item">
                                                 <label class="label-name" for="tel">*Номер телефону</label>
-                                                <input type="tel" name="tel" required>
+                                                <input type="tel" name="tel" id="tel" required>
                                             </div>
                                             <div class="order__input-item">
                                                 <label class="label-name" for="email">E-mail</label>
-                                                <input type="email" name="email">
+                                                <input type="email" name="email" id="email">
                                             </div>
                                         </div>
                                     </div>
@@ -278,11 +278,11 @@
                                         <div class="order__block-inputs">
                                             <div class="order__input-item">
                                                 <label class="label-name" for="locality">*Населений пункт</label>
-                                                <input type="text" name="locality" required>
+                                                <input type="text" name="locality" id="locality" required>
                                             </div>
                                             <div class="order__input-item">
                                                 <label class="label-name" for="department">*Відділення</label>
-                                                <input type="text" name="department" required>
+                                                <input type="text" name="department" id="department" required>
                                             </div>
                                         </div>
                                     </div>                                    
@@ -442,8 +442,8 @@
                                 <span class="checkmark">Передзвонити для підтвердження</span>
                             </label>
                             <div class="order__block-textarea">
-                                <label class="label-name" for="department">Коментар</label>
-                                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                <label class="label-name" for="message">Коментар</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
                             </div>
                             <button class="order__block-send" type="submit">Оплатити</button>
                         </div>
