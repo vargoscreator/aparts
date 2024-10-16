@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/checkout.css">
 
 </head>
 <body class="body"> 
@@ -226,35 +226,38 @@
     </header>
 
     <main class="main">
-       <section class="order">
+       <section class="checkout">
             <div class="container">
-                <div class="order__inner">
-                    <a class="order__nav navigation" href="basket.html">Назад до Кошику</a>
-                    <form class="order__content" action="#">
-                        <div class="order__box">
+                <div class="checkout__inner">
+                    <a class="checkout__nav navigation" href="basket.html">Назад до Кошику</a>
+                    <form class="checkout__content" action="#">
+                        <div class="checkout__box">
                             <h1>Оформлення замовлення</h1>
-                            <div class="order__box-content">
-                                <div class="order__block">
+                            <div class="checkout__box-content">
+                                <div class="checkout__block">
                                     <h3>Особисті дані отримувача</h3>
-                                    <div class="order__block-content">
-                                        <div class="order__block-inputs">
-                                            <div class="order__input-item">
+                                    <div class="checkout__block-content">
+                                        <div class="checkout__block-inputs">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="surname">*Прізвище</label>
                                                 <input type="text" name="surname" id="surname" required>
+                                                <span class="text-danger">Поле Прізвище обов'язкове.</span>
                                             </div>
-                                            <div class="order__input-item">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="name">*Ім’я</label>
                                                 <input type="text" name="name" id="name" required>
+                                                <span class="text-danger">Поле Ім’я обов'язкове.</span>
                                             </div>
-                                            <div class="order__input-item">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="fatherly">По-батькові</label>
                                                 <input type="text" name="fatherly" id="fatherly">
                                             </div>
-                                            <div class="order__input-item">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="tel">*Номер телефону</label>
                                                 <input type="tel" name="tel" id="tel" required>
+                                                <span class="text-danger">Будь ласка, введіть номер телефону у форматі '+380XXXXXXXXX'.</span>
                                             </div>
-                                            <div class="order__input-item">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="email">E-mail</label>
                                                 <input type="email" name="email" id="email">
                                             </div>
@@ -262,36 +265,38 @@
                                     </div>
                                 </div>
 
-                                <div class="order__block">
+                                <div class="checkout__block">
                                     <h3>Спосіб доставки</h3>
-                                    <div class="order__block-content">
-                                        <div class="order__block-radio">
-                                            <label class="order__radio-label">
-                                                <input type="radio" name="delivery-type" class="order__radio" checked>
+                                    <div class="checkout__block-content">
+                                        <div class="checkout__block-radio">
+                                            <label class="checkout__radio-label">
+                                                <input type="radio" name="delivery-type" class="checkout__radio" checked>
                                                 <span class="checkmark">Нова пошта</span>
                                             </label>
-                                            <label class="order__radio-label">
-                                                <input type="radio" name="delivery-type" class="order__radio">
+                                            <label class="checkout__radio-label">
+                                                <input type="radio" name="delivery-type" class="checkout__radio">
                                                 <span class="checkmark">Самовивіз</span>
                                             </label>    
                                         </div>
-                                        <div class="order__block-inputs">
-                                            <div class="order__input-item">
+                                        <div class="checkout__block-inputs">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="locality">*Населений пункт</label>
                                                 <input type="text" name="locality" id="locality" required>
+                                                <span class="text-danger">Поле Населений пункт обов'язкове.</span>
                                             </div>
-                                            <div class="order__input-item">
+                                            <div class="checkout__input-item">
                                                 <label class="label-name" for="department">*Відділення</label>
                                                 <input type="text" name="department" id="department" required>
+                                                <span class="text-danger">Поле Відділення обов'язкове.</span>
                                             </div>
                                         </div>
                                     </div>                                    
                                 </div>
 
-                                <div class="order__block">
+                                <div class="checkout__block">
                                     <h3>Спосіб оплати</h3>
-                                    <div class="order__block-content">
-                                        <div class="order__block-message">
+                                    <div class="checkout__block-content">
+                                        <div class="checkout__block-message">
                                             <p>Оплата товарів здійснюється одним із наступних варіантів:</p>
                                             <br>
                                             <p>Оливи, фільтри, технічні рідини та інші розхідники:</p>
@@ -309,17 +314,17 @@
                                             <br>
                                             <p>Будь ласка, оберіть найзручніший для вас варіант оплати</p>
                                         </div>
-                                        <div class="order__block-radio">
-                                            <label class="order__radio-label">
-                                                <input type="radio" name="pay-type" class="order__radio" checked>
+                                        <div class="checkout__block-radio">
+                                            <label class="checkout__radio-label">
+                                                <input type="radio" name="pay-type" class="checkout__radio" checked>
                                                 <span class="checkmark">Повна оплата на ФОП</span>
                                             </label>
-                                            <label class="order__radio-label">
-                                                <input type="radio" name="pay-type" class="order__radio">
+                                            <label class="checkout__radio-label">
+                                                <input type="radio" name="pay-type" class="checkout__radio">
                                                 <span class="checkmark">Накладений платіж</span>
                                             </label>    
-                                            <label class="order__radio-label">
-                                                <input type="radio" name="pay-type" class="order__radio" disabled>
+                                            <label class="checkout__radio-label">
+                                                <input type="radio" name="pay-type" class="checkout__radio" disabled>
                                                 <span class="checkmark">Готівка (доступна тільки при самовивозі)</span>
                                             </label>    
                                         </div>
@@ -328,58 +333,58 @@
 
                             </div>
                         </div>
-                        <div class="order__total">
-                            <p class="order__total-title">ПІДСУМОК</p>
-                            <div class="order__total-position">
+                        <div class="checkout__total">
+                            <p class="checkout__total-title">ПІДСУМОК</p>
+                            <div class="checkout__total-position">
                                 <p>Всього позицій</p>
                                 <p>4</p>
                             </div>
-                            <div class="order__total-delivery">
+                            <div class="checkout__total-delivery">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 13.625C10.6066 13.625 13.125 11.1066 13.125 8C13.125 4.8934 10.6066 2.375 7.5 2.375C4.3934 2.375 1.875 4.8934 1.875 8C1.875 11.1066 4.3934 13.625 7.5 13.625ZM14.375 8C14.375 11.797 11.297 14.875 7.5 14.875C3.70304 14.875 0.625 11.797 0.625 8C0.625 4.20304 3.70304 1.125 7.5 1.125C11.297 1.125 14.375 4.20304 14.375 8ZM8.125 10.5C8.125 10.8452 7.84518 11.125 7.5 11.125H7.49375C7.14857 11.125 6.86875 10.8452 6.86875 10.5C6.86875 10.1548 7.14857 9.875 7.49375 9.875H7.5C7.84518 9.875 8.125 10.1548 8.125 10.5ZM7.5 8.625C7.15482 8.625 6.875 8.34518 6.875 8V5.5C6.875 5.15482 7.15482 4.875 7.5 4.875C7.84518 4.875 8.125 5.15482 8.125 5.5V8C8.125 8.34518 7.84518 8.625 7.5 8.625Z" fill="#FF0000"/>
                                 </svg>
                                 <p>Ваше замовлення буде поділено на 2 доставки.</p>
                             </div>
-                            <div class="order__total-content">
-                                <div class="order__total-item">
+                            <div class="checkout__total-content">
+                                <div class="checkout__total-item">
                                     <h3>Одеса</h3>
-                                    <div class="order__total-block">
-                                        <div class="order__total-product">
-                                            <div class="order__product-top">
+                                    <div class="checkout__total-block">
+                                        <div class="checkout__total-product">
+                                            <div class="checkout__product-top">
                                                 <a href="#">
                                                     <h3>GKN/LOBRO/SPIDAN</h3>
                                                 </a>
                                                 <p>23690</p>
                                             </div>
-                                            <div class="order__product-message">
+                                            <div class="checkout__product-message">
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>                                            
-                                            <div class="order__product-bottom">
-                                                <div class="order__product-price">
+                                            <div class="checkout__product-bottom">
+                                                <div class="checkout__product-price">
                                                     <p>450 UAH</p>
                                                     <p>х2</p>
                                                 </div>
-                                                <div class="order__product-total">
+                                                <div class="checkout__product-total">
                                                     <p>900 UAH</p>
                                                 </div>                                                
                                             </div>
                                         </div>
-                                        <div class="order__total-product">
-                                            <div class="order__product-top">
+                                        <div class="checkout__total-product">
+                                            <div class="checkout__product-top">
                                                 <a href="#">
                                                     <h3>GKN/LOBRO/SPIDAN</h3>
                                                 </a>
                                                 <p>23690</p>
                                             </div>
-                                            <div class="order__product-message">
+                                            <div class="checkout__product-message">
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>                                            
-                                            <div class="order__product-bottom">
-                                                <div class="order__product-price">
+                                            <div class="checkout__product-bottom">
+                                                <div class="checkout__product-price">
                                                     <p>450 UAH</p>
                                                     <p>x1</p>
                                                 </div>
-                                                <div class="order__product-total">
+                                                <div class="checkout__product-total">
                                                     <p>450 UAH</p>
                                                 </div>                                                
                                             </div>
@@ -387,45 +392,45 @@
                                     </div>
                                 </div>
 
-                                <div class="order__total-item">
+                                <div class="checkout__total-item">
                                     <h3>Житомир</h3>
-                                    <div class="order__total-block">
-                                        <div class="order__total-product">
-                                            <div class="order__product-top">
+                                    <div class="checkout__total-block">
+                                        <div class="checkout__total-product">
+                                            <div class="checkout__product-top">
                                                 <a href="#">
                                                     <h3>GKN/LOBRO/SPIDAN</h3>
                                                 </a>
                                                 <p>23690</p>
                                             </div>
-                                            <div class="order__product-message">
+                                            <div class="checkout__product-message">
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>                                            
-                                            <div class="order__product-bottom">
-                                                <div class="order__product-price">
+                                            <div class="checkout__product-bottom">
+                                                <div class="checkout__product-price">
                                                     <p>450 UAH</p>
                                                     <p>х2</p>
                                                 </div>
-                                                <div class="order__product-total">
+                                                <div class="checkout__product-total">
                                                     <p>900 UAH</p>
                                                 </div>                                                
                                             </div>
                                         </div>
-                                        <div class="order__total-product">
-                                            <div class="order__product-top">
+                                        <div class="checkout__total-product">
+                                            <div class="checkout__product-top">
                                                 <a href="#">
                                                     <h3>GKN/LOBRO/SPIDAN</h3>
                                                 </a>
                                                 <p>23690</p>
                                             </div>
-                                            <div class="order__product-message">
+                                            <div class="checkout__product-message">
                                                 <p>Ремонтний комплект пильника шарніра рівних кутових швидкостей, з елементами монтажу </p>
                                             </div>                                            
-                                            <div class="order__product-bottom">
-                                                <div class="order__product-price">
+                                            <div class="checkout__product-bottom">
+                                                <div class="checkout__product-price">
                                                     <p>450 UAH</p>
                                                     <p>x1</p>
                                                 </div>
-                                                <div class="order__product-total">
+                                                <div class="checkout__product-total">
                                                     <p>450 UAH</p>
                                                 </div>                                                
                                             </div>
@@ -433,19 +438,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="order__total-price">
+                            <div class="checkout__total-price">
                                 <p>Загальна вартість</p>
                                 <p>1600 UAH</p>
                             </div>
-                            <label class="order__total-checkbox filter__label">
+                            <label class="checkout__total-checkbox filter__label">
                                 <input type="checkbox" name="call-back" class="filter__checkbox">
                                 <span class="checkmark">Передзвонити для підтвердження</span>
                             </label>
-                            <div class="order__block-textarea">
+                            <div class="checkout__block-textarea">
                                 <label class="label-name" for="message">Коментар</label>
                                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
                             </div>
-                            <button class="order__block-send" type="submit">Оплатити</button>
+                            <button class="checkout__block-send" type="submit">Оплатити</button>
                         </div>
                     </form>
                 </div>
@@ -544,6 +549,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/order.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 </html>
