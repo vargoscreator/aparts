@@ -43,6 +43,7 @@ function checkScroll() {
     const scrollLimit = window.innerWidth < 768 ? 130 : 180;
     if (window.scrollY > scrollLimit) {
       header.classList.add('scroll');
+      headerLinkOpen.classList.remove('active');
     } else {
       header.classList.remove('scroll');
     }
