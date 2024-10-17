@@ -62,6 +62,9 @@
     flex-direction: column;
     gap: 10px;
 }
+.product__about-top a{
+    width: max-content;
+}
 .product__about-top h3{
     font-size: 16px;
     font-weight: 600;
@@ -104,6 +107,11 @@
 .product__about-compatibility:hover,
 .product__about-top h3:hover{
     text-decoration: none;
+    color: currentColor;
+    color: var(--color-dark);
+}
+.product__about-info:hover svg g path{
+    fill: var(--color-dark);;
 }
 .product__item-table{
     width: 100%;

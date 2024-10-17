@@ -63,6 +63,16 @@ a{
     vertical-align:baseline;
     background:transparent;
 }
+a:hover{
+    text-decoration: none;
+}
+a:focus {
+    color: inherit !important;
+    text-decoration: none; /* убирает подчеркивание при фокусе, если не нужно */
+  }
+a:focus {
+    outline: none
+}
 button{
     padding: 0;
     border: none;
@@ -286,11 +296,15 @@ h3{
     letter-spacing: 0.406px;
     width: max-content;
 }
+.header__about-item span{
+    color: var(--color-white);
+}
 a.header__about-item:hover{
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     text-decoration: underline;
-    text-underline-position: under;  
+    text-underline-position: under;
+    color: var(--color-white);
 }
 .header__about-item br{
     display: none;
@@ -356,6 +370,7 @@ a.header__about-item:hover{
     right: -21px;
 }
 .header__user-account{
+    color: var(--color-white);
     width: 100%;
     max-width: 150px;
     display: flex;
@@ -380,6 +395,7 @@ a.header__about-item:hover{
 .header__profile:hover,
 .header__logout:hover{
     text-decoration: none;
+    color: var(--color-white);
 }
 .header__burger{
     display: none;
@@ -802,7 +818,8 @@ a.footer__about-item:hover{
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     text-decoration: underline;
-    text-underline-position: under;   
+    text-underline-position: under;  
+    color: var(--color-white); 
 }
 .footer__social {
     display: flex;
