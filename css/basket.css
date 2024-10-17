@@ -104,6 +104,9 @@
     text-decoration-line: underline;
     text-transform: uppercase; 
 }
+.basket__item-start h3:hover{
+    text-decoration: none;
+}
 .basket__item-start p:nth-of-type(1){
     color: rgba(25, 25, 25, 0.50);
     font-weight: 600;

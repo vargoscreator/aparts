@@ -221,6 +221,9 @@
     text-decoration-line: underline;
     text-transform: uppercase;
 }
+.checkout__product-top h3:hover{
+    text-decoration: none;
+}
 .checkout__product-top p{
     color: rgba(25, 25, 25, 0.50);
 }

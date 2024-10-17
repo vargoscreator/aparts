@@ -115,7 +115,7 @@ html,body{
 main.main{
     padding-top: 232.66px;
 }
-.container{
+.wrapper{
     max-width: 1190px;
     padding: 0 15px;
     margin: 0 auto;
@@ -139,7 +139,7 @@ h3{
     line-height: 120%;
 }
 @media (max-width: 1279px) {
-    .container{
+    .wrapper{
         max-width: 1000px;
     }
     main.main{
@@ -147,7 +147,7 @@ h3{
     }
 }
 @media (max-width: 999px) {
-    .container{
+    .wrapper{
         max-width: 768px;
     }
     main.main{
@@ -155,7 +155,7 @@ h3{
     }
 }
 @media (max-width: 767px) {
-    .container{
+    .wrapper{
         max-width: 480px;
     }
     main.main {
@@ -645,7 +645,7 @@ a.header__link:hover{
     .header__menu-content.active{
         transform: translateX(0);
     }
-    .header__menu-content .container{
+    .header__menu-content .wrapper{
         display: flex;
         flex-direction: column;
         gap: 40px;

@@ -443,6 +443,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.popular__product-content h3:hover{
+    text-decoration: none;
+}
 .popular__product-block p:first-of-type{
     text-align: center;
     color: rgba(25, 25, 25, 0.50);
