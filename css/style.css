@@ -452,7 +452,7 @@ a.header__link:hover{
     background-color: #FFFFFF;
     left: 0;
     right: 0;
-    max-height: calc(100vh - 232px);
+    height: calc(100vh - 232px);
     overflow: auto;
     opacity: 0;
     pointer-events: none;
